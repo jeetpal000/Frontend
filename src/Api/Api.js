@@ -2,7 +2,7 @@ import axios from 'axios'
 
 //! Base URL 
 const api = axios.create({
-    baseURL: "http://localhost:3005",
+    baseURL: "https://backend-1-cxkk.onrender.com",
     withCredentials: true
 })
 
