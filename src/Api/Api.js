@@ -23,7 +23,7 @@ export const updateProfile = (data, id)=>{
 
 // 
 export const getHomePageData = ()=>{
-    return api.get("chat",{withCredentials: true})
+    return api.get("/chat",{withCredentials: true})
 }
 
 //! logoout user
