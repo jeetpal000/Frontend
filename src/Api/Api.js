@@ -2,8 +2,9 @@ import axios from 'axios'
 
 //! Base URL 
 const api = axios.create({
-    baseURL: "https://backend-1-cxkk.onrender.com",
-    withCredentials: true
+    baseURL: "https://backend-1-wd1c.onrender.com",
+    // baseURL: "http://localhost:3005",
+    withCredentials: true,
 })
 
 //* Resgistration

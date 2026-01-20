@@ -4,6 +4,7 @@ import assets from "../../assets/assets.js";
 import { toast } from "react-toastify";
 import { loginPost, registrationPost } from "../../Api/Api.js";
 // import { useEffect } from "react";
+import bg from "../../../public/background.png"
 
 const Login = () => {
   const [currState, setCurrState] = useState("Sign up");
@@ -41,7 +42,7 @@ const Login = () => {
  
 
   return (
-    <div className=" min-h-screen bg-[url(./background.png)] bg-no-repeat bg-cover flex items-center justify-evenly">
+    <div className=" min-h-screen bg-[url(../../../public/background.png)] bg-no-repeat bg-cover flex items-center justify-evenly">
       <img src={assets.logo_big} alt="" className="w-50" />
       <form
         onSubmit={handleSubmit}
