@@ -4,7 +4,7 @@ import assets from "../../assets/assets.js";
 import { toast } from "react-toastify";
 import { loginPost, registrationPost } from "../../Api/Api.js";
 // import { useEffect } from "react";
-import bg from "../../../public/background.png"
+// import bg from "../../../public/background.png"
 
 const Login = () => {
   const [currState, setCurrState] = useState("Sign up");
@@ -25,7 +25,7 @@ const Login = () => {
       
       // console.log(response.data.message);
       e.target.reset();
-      if(response.status === 201){
+      if(response.status === 201 || response.status===200){
         // console.log(response)
         (currState==="Sign up")?(toast.success(response.data.message, {position: "top-right", autoClose: 3000})
         ):(toast.success(response.data.message, {position: "top-right", autoClose: 3000}))
@@ -42,7 +42,7 @@ const Login = () => {
  
 
   return (
-    <div className=" min-h-screen bg-[url(../../../public/background.png)] bg-no-repeat bg-cover flex items-center justify-evenly">
+    <div className=" min-h-screen bg-[url(./background.png)] bg-no-repeat bg-cover flex items-center justify-evenly">
       <img src={assets.logo_big} alt="" className="w-50" />
       <form
         onSubmit={handleSubmit}

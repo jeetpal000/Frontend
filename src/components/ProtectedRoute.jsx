@@ -21,7 +21,7 @@ const ProtectedRoute = ({children}) => {
     }, [])
 
     if(auth===null) return <p>Loading....</p>
-    return auth ? children : <Navigate to="/login" replace />
+    return auth ? children : <Navigate to="/" replace />
 
 }
 
